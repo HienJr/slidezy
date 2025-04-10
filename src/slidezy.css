@@ -5,11 +5,11 @@
 }
 .slidezy-track {
   display: flex;
-  transition: transform ease 0.3s;
+  /* transition: transform ease 0.3s; */
 }
 
 .slidezy-slide {
-  flex: 0 0 calc(100% / 3);
+  flex: 0 0 auto;
 }
 
 .slidezy-prev,

@@ -15,22 +15,22 @@
         text-align: center;
         padding: 30px;
       }
-      .slidezy-slide:nth-child(1) {
+      .slide-1 {
         background: red;
       }
-      .slidezy-slide:nth-child(2) {
+      .slide-2 {
         background: violet;
       }
-      .slidezy-slide:nth-child(3) {
+      .slide-3 {
         background: yellow;
       }
-      .slidezy-slide:nth-child(4) {
+      .slide-4 {
         background: gray;
       }
-      .slidezy-slide:nth-child(5) {
+      .slide-5 {
         background: red;
       }
-      .slidezy-slide:nth-child(6) {
+      .slide-6 {
         background: orange;
       }
     </style>
@@ -38,22 +38,20 @@
   <body>
     <h1>slidezy</h1>
     <div id="my-slider">
-      <div>Slide 1</div>
-      <div>Slide 2</div>
-      <div>Slide 3</div>
-      <div>Slide 4</div>
-      <div>Slide 5</div>
-      <div>Slide 6</div>
-      <div>Slide 1</div>
-      <div>Slide 2</div>
-      <div>Slide 3</div>
-      <div>Slide 4</div>
-      <div>Slide 5</div>
-      <div>Slide 6</div>
+      <div class="slide-1">Slide 1</div>
+      <div class="slide-2">Slide 2</div>
+      <div class="slide-3">Slide 3</div>
+      <div class="slide-4">Slide 4</div>
+      <div class="slide-5">Slide 5</div>
+      <div class="slide-6">Slide 6</div>
     </div>
     <script src="./src/slidezy.js"></script>
     <script>
-      const mySlider = new Slidezy("#my-slider");
+      const mySlider = new Slidezy("#my-slider", {
+        items: 3,
+        loop: true,
+        nav: true,
+      });
     </script>
   </body>
 </html>
