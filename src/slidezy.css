@@ -1,11 +1,13 @@
 .slidezy-wrapper {
-  position: relative;
   width: 100%;
   overflow: hidden;
 }
+
+.slidezy-content {
+  position: relative;
+}
 .slidezy-track {
   display: flex;
-  /* transition: transform ease 0.3s; */
 }
 
 .slidezy-slide {
@@ -30,4 +32,24 @@
 }
 .slidezy-next {
   right: 10px;
+}
+
+.slidezy-nav {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.slidezy-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background: #ccc;
+}
+
+.active {
+  background: #333;
 }
